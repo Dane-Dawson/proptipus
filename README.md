@@ -1,3 +1,35 @@
+# Proptipus the Prodigious cePhaloPod.
+
+Proptipus the cephalopod has a plethora of pretty pleasant past-times, but priorly preconcieved postulations prevent our poor Proptipus from performing his practical pursuits.
+
+*whew*, that was a mouthful!
+
+Proptipus is an octopus made out of React components, consisting of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Octopus` component) to his `Tentacle` component how they should.
+
+Tentacle 1
+
+The purpose of this lab is familiarity with props and how they can be used.
+
+Loose format concept is an octopus component that has 8 leg components, state is stored in the octopus "body" (like a brain") and each successive task builds in complexity. Current ideas for progression
+
+One arm displaying value => simple state value output
+    Maybe a pun, and punchline is displayed with prop passed. If it's an img punchline can be hidden until reveal.
+
+Another holds some object for data keys. => prop object deconstruction
+    Maybe id? Or pokemon card parody with stats filled? 
+
+Another holds an array of data to iterate => prop iteration
+    cards? Don't want to re-use ideas...robots? 
+
+Two arms connected with incrementer/decrementer => bubble up event listener
+    One has simple controller with two buttons, the other a display screen. Student must create function to capture button click, alter state and display it below. Need clever thing to track...Song stuck in head?
+    
+Two arms connected with show/hide ball => conditional render
+
+last arm can be connect to do a ball switch if both tentacles are closed? 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
