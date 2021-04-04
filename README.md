@@ -8,9 +8,16 @@ Proptipus is an octopus made out of React components, consisting of one `Octopus
 
 Tentacle 1
 
+
+## Planning/ideation
+
+-note, something wonky going on with TentacleSix import...
+
 The purpose of this lab is familiarity with props and how they can be used.
 
-Loose format concept is an octopus component that has 8 leg components, state is stored in the octopus "body" (like a brain") and each successive task builds in complexity. Current ideas for progression
+Loose format concept is an octopus component that has 8 leg components, state is stored in the octopus "body" (like a brain") and each successive task builds in complexity. Current ideas for progression.
+
+--Need to make a functional vs class component child as well.
 
 One arm displaying value => simple state value output
     Maybe a pun, and punchline is displayed with prop passed. If it's an img punchline can be hidden until reveal.
