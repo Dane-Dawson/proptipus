@@ -4,8 +4,7 @@ class TentacleSeven extends React.Component {
   render() {
     return (
       <div className="tentacle-seven">
-        <h2>I'm a Tentacle!</h2>
-        <p>This tentacle controls what is viewed on tentacle 8</p>
+        <p>This tentacle (7) controls what is viewed on tentacle 8</p>
       </div>
     );
   }

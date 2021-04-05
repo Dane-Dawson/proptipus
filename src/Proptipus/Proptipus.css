@@ -1,16 +1,132 @@
 .proptipus {
-    justify-content: center;
-    background-color: aqua;
+  /* justify-content: center; */
+  /* background-color: aqua; */
+  position: relative;
+  width: 50vw;
 }
 
 .proptipus-image {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    /* padding: 20px; */
-    max-width: 600px;
+  box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
+  border-radius: 75px;
+  vertical-align: center;
+
+  top: 5vh;
+  left: 20vw;
+  width: 50vw;
+  margin: 0;
+  position: absolute;
+}
+.logo {
+    position: relative;
+    box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
+    background-color: rgba(3, 193, 218, 0.56);
+    border-radius: 15px;
+    top: 29vw;
+    left: 20vw;
+    height: 6vw;
+    z-index: 100;
 }
 
-.img {
+div.tentacle-one {
+  position: absolute;
+  top: 5vw;
+  left: 18vw;
+  width: 25vh;
+  height: 15vw;
+  border: 3px solid #eaeb9e;
+  border-radius: 10px;
 
+  background-color: blanchedalmond;
+  opacity: 0.8;
 }
+
+div.tentacle-two {
+    position: absolute;
+    top: 22vw;
+    left: 10vw;
+    width: 25vh;
+    height: 15vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-three {
+    position: absolute;
+    top: 22vw;
+    left: 63vw;
+    width: 25vh;
+    height: 15vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-four {
+    position: absolute;
+    top: 5vw;
+    left: 60vw;
+    width: 30vh;
+    height: 15vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-five {
+    position: absolute;
+    top: 42vw;
+    left: 12vw;
+    width: 30vh;
+    height: 13vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-six {
+    position: absolute;
+    top: 40vw;
+    left: 33vw;
+    width: 20vh;
+    height: 13vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-seven {
+    position: absolute;
+    top: 41vw;
+    left: 47vw;
+    width: 15vh;
+    height: 13vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
+
+  div.tentacle-eight {
+    position: absolute;
+    top: 42vw;
+    left: 60vw;
+    width: 20vh;
+    height: 13vw;
+    border: 3px solid #eaeb9e;
+    border-radius: 10px;
+  
+    background-color: blanchedalmond;
+    opacity: 0.8;
+  }
