@@ -1,4 +1,5 @@
 import React from "react";
+import "./Proptipus.css"
 import TentacleOne from "./Tentacles/TentacleOne";
 import TentacleTwo from "./Tentacles/TentacleTwo";
 import TentacleThree from "./Tentacles/TentacleThree";
@@ -7,22 +8,22 @@ import TentacleFive from "./Tentacles/TentacleFive";
 import TentacleSix from "./Tentacles/TentacleSIx";
 import TentacleSeven from "./Tentacles/TentacleSeven";
 import TentacleEight from "./Tentacles/TentacleEight";
-
+import Proptimus from "../images/Proptipus.png"
 class Proptipus extends React.Component {
   state = {};
 
   render() {
     return (
-      <div>
-        <h1>Proptipus</h1>
-        <TentacleOne />
+      <div className="proptipus">
+        <img className="proptipus-image" src={Proptimus} />
+        {/* <TentacleOne />
         <TentacleTwo />
         <TentacleThree />
         <TentacleFour />
         <TentacleFive />
         <TentacleSix />
         <TentacleSeven />
-        <TentacleEight />
+        <TentacleEight /> */}
       </div>
     );
   }
