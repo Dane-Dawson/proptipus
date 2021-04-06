@@ -4,8 +4,19 @@ class TentacleFour extends React.Component {
   render() {
     return (
       <div className="tentacle-four">
-      <span className="tentacle-tag">Tentacle 4 - Array iterator</span>
-        <p>Iterate through array of objects</p>
+      <span className="friends-header">My Favorite Friends</span>
+        <table id="propti-friends">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+        </table>
       </div>
     );
   }

@@ -1,11 +1,27 @@
 import React from "react";
 
-function TentacleThree(){
+function TentacleThree(props){
 
     return (
       <div className="tentacle-three">
-      <span className="tentacle-tag">Tentacle 3 - Object render pt. II</span>
-        <p>Functional component object</p>
+      <span className="fish-name">
+          {props.card.name}
+        </span>
+
+        <img className="fish-image" 
+        src={props.card.image} />
+
+        <span className="fish-type">
+          {props.card.type}
+        </span>
+
+        <span className="fish-description">
+          {props.card.description}
+        </span>
+
+        <span className="fish-attack">
+          {props.card.attack}
+        </span>
       </div>
     );
 }

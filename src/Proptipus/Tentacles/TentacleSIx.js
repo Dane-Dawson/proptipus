@@ -6,6 +6,7 @@ class TentacleSix extends React.Component {
       <div className="tentacle-six">
         <span className="number-readout">
           {/* {readout goes here} */}
+          12
         </span>
       </div>
     );

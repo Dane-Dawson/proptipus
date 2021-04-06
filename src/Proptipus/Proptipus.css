@@ -47,17 +47,17 @@ div.tentacle-one {
   opacity: 0.98;
 }
 span.joke-setup {
-    position: absolute;
+  position: absolute;
   font-family: fantasy;
   color: rgba(2, 57, 14, 0.885);
   font-style: italic;
   width: 150px;
   left: 20px;
-  top: 42px;
+  top: 45px;
 }
 
 span.punchline {
-    position: absolute;
+  position: absolute;
   color: rgba(102, 23, 3, 0.885);
   font-family: fantasy;
   font-size: 12px;
@@ -71,43 +71,122 @@ div.tentacle-two {
   top: 260px;
   left: 30px;
   width: 150px;
-  height: 150px;
-  border: 3px solid #eaeb9e;
+  height: 220px;
+  border: 1px solid #020e1f;
   border-radius: 10px;
 
-  background-color: blanchedalmond;
-  opacity: 0.8;
+  background-image: url("../images/FishGiOhBlueCard.png");
+  background-size: 150px;
+  /* background-color: blanchedalmond; */
+  opacity: 0.98;
+}
+span.fish-name {
+  position: absolute;
+  top: 9px;
+  left: 30px;
+  font-family: "palatino-bold";
+}
+
+img.fish-image {
+  position: absolute;
+  top: 37px;
+  left: 17px;
+  width: 112px;
+  height: 113px;
+  border: 2px solid #020e1f;
+}
+
+span.fish-type {
+  position: absolute;
+  top: 165px;
+  left: 15px;
+
+  font-size: 10px;
+  font-family: "palatino-bold";
+}
+
+span.fish-description {
+  position: absolute;
+  top: 177px;
+  left: 18px;
+  width: 115px;
+
+  font-size: 8px;
+  font-family: "palatino-bold";
+}
+
+span.fish-attack {
+  position: absolute;
+  top: 198px;
+  left: 48px;
+  width: 115px;
+
+  color: rgb(136, 4, 4);
+  font-size: 7px;
+  font-family: "palatino-bold";
 }
 
 div.tentacle-three {
   position: absolute;
-  top: 300px;
+  top: 255px;
   left: 600px;
   width: 150px;
-  height: 150px;
-  border: 3px solid #eaeb9e;
+  height: 220px;
+  border: 1px solid #020e1f;
   border-radius: 10px;
-
-  background-color: blanchedalmond;
-  opacity: 0.8;
+  background-image: url("../images/FishGiOhBlueCard.png");
+  background-size: 150px;
+  opacity: 0.98;
 }
 
 div.tentacle-four {
   position: absolute;
   top: 45px;
-  left: 550px;
-  width: 300px;
+  left: 500px;
+  width: 350px;
   height: 200px;
-  border: 3px solid #eaeb9e;
   border-radius: 10px;
 
-  background-color: blanchedalmond;
-  opacity: 0.8;
+  background-image: url("../images/AddressBook.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  opacity: 0.98;
+}
+
+span.friends-header {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    font-family: 'futura-bold';
+}
+
+#propti-friends {
+    position: absolute;
+    top: 47px;
+    left: 40px;
+  font-family: 'garamond-bold-italic';
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#propti-friends td,
+#propti-friends th {
+  /* border: 1px solid #ddd; */
+  padding: 3px;
+}
+
+
+
+#propti-friends th {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: left;
 }
 
 div.tentacle-five {
   position: absolute;
-  top: 470px;
+  top: 490px;
   left: 33px;
   width: 220px;
   height: 150px;
@@ -224,7 +303,7 @@ div.tentacle-six {
 
 span.number-readout {
   position: absolute;
-  left: 55px;
+  left: 43px;
   color: rgb(8, 133, 4);
   font: 50px Inconsolata, monospace;
   text-shadow: 0 0 5px #37d806;

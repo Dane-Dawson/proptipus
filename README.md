@@ -16,7 +16,11 @@ Proptipus is trying to write down the punch line to his favorite joke, but can't
 
 ## Tentacle 2 - Passing an object as a prop, class component
 
+Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards since he was but a wee larvae (look it up, that's actually what newborn octopi are called!). Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOh` object down into `TentacleTwo` and filling out the information accordingly.
+
 ## Tentacle 3 - Passing an object as a prop, functional component
+
+Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOh` card in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
 
 ## Tentacle 4 - Passing an array as a prop
 
