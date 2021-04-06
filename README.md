@@ -1,5 +1,18 @@
 # Proptipus the Prodigious cePhaloPod.
 
+This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental labwork to reinforce and solidy the concepts needed to work within the React framework with it's `state`.
+
+To install this project run 
+```
+npm install
+```
+and to run this server use
+```
+npm start
+```
+Now let's get to the fun!
+
+
 Proptipus the cephalopod has a plethora of pretty pleasant past-times, but priorly preconcieved postulations prevent our poor Proptipus from performing his practical pursuits.
 
 *whew*, that was a mouthful!
@@ -23,6 +36,10 @@ Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards 
 Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOh` card in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
 
 ## Tentacle 4 - Passing an array as a prop
+
+Proptipus has a lot of friends (so he says), and has been meaning to get their contact information written down...can you help him transfer his ENOURMOUS friend list from his head onto his address book?
+
+For this challenge you'll need to find the `friendList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows!
 
 ## Tentacles 5 and 6 - Bubbling events and re-rendering via state change
 

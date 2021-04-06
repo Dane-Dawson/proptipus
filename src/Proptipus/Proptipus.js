@@ -5,7 +5,7 @@ import TentacleTwo from "./Tentacles/TentacleTwo";
 import TentacleThree from "./Tentacles/TentacleThree";
 import TentacleFour from "./Tentacles/TentacleFour";
 import TentacleFive from "./Tentacles/TentacleFive";
-import TentacleSix from "./Tentacles/TentacleSix";
+import TentacleSix from "./Tentacles/TentacleSixth.js";
 import TentacleSeven from "./Tentacles/TentacleSeven";
 import TentacleEight from "./Tentacles/TentacleEight";
 import ProptipusBackground from "../images/Proptipus.png";
@@ -37,6 +37,7 @@ class Proptipus extends React.Component {
       { name: "Allen the Axolotl", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
       { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
     ]
+
   };
 
   render() {

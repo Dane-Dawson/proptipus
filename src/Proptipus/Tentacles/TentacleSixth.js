@@ -1,9 +1,10 @@
-import React from "react";
 
+
+import React from "react";
 class TentacleSix extends React.Component {
   render() {
     return (
-      <div className="tentacle-six">
+        <div className="tentacle-six">
         <span className="number-readout">
           {/* {readout goes here} */}
           12
@@ -12,5 +13,4 @@ class TentacleSix extends React.Component {
     );
   }
 }
-
 export default TentacleSix;
