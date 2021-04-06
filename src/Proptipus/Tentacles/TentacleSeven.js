@@ -4,8 +4,15 @@ class TentacleSeven extends React.Component {
   render() {
     return (
       <div className="tentacle-seven">
-      <span className="tentacle-tag">Tentacle 7 - Conditional render toggle</span>
-        <p>selector</p>
+        <input 
+        type="radio" 
+        value="show"
+        /> Show
+        <br/>
+        <input 
+        type="radio" 
+        value="hide"
+        /> Hide
       </div>
     );
   }
