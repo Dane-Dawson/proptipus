@@ -327,11 +327,35 @@ div.tentacle-eight {
   position: absolute;
   top: 480px;
   left: 540px;
-  width: 220px;
-  height: 120px;
+  width: 270px;
+  height: 200px;
   border: 3px solid #eaeb9e;
   border-radius: 10px;
+
+  overflow: scroll;
+  /* overflow-y: hidden; */
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
 
   background-color: blanchedalmond;
   opacity: 0.8;
 }
+
+span.movie-card {
+    width: 30%;
+    height: 33%;
+    border: 3px solid #eaeb9e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span.movie-title {
+    font-size: 10px;
+}
+
+span.movie-rating {
+    font-size: 8px;
+}
+
