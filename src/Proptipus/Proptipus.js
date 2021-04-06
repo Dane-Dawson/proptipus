@@ -46,8 +46,9 @@ class Proptipus extends React.Component {
         {title: "The Blair Fish Project", genre: "Horror", rating: "2"},
         {title: "28 Manta Rays Later", genre: "Horror", rating: "4"},
         {title: "Beauty and The Breached Whale", genre: "Family", rating: "5"},
-    ]
-
+    ],
+    showMovies: false,
+    moviesFilter: "Any"
   };
 
   render() {
