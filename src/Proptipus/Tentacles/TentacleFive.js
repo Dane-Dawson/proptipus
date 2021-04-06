@@ -10,9 +10,9 @@ class TentacleFive extends React.Component {
       <span className="magic-remote-text">Remote</span>
       <br/>
       <button className="magic-remote-button color-1" 
-      onClick={null /* replace this null with a function */}>-</button>
+      onClick={() => this.props.subtractOne()}>-</button>
       <button className="magic-remote-button color-2" 
-      onClick={null /* replace this null with a function */}>+</button>
+      onClick={() => this.props.addOne()}>+</button>
       <br/>
       <span  className="magic-remote-disclaimer">
       Proptipus to-do: Fix blinky light (batteries?)

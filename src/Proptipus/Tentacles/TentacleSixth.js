@@ -6,8 +6,7 @@ class TentacleSix extends React.Component {
     return (
         <div className="tentacle-six">
         <span className="number-readout">
-          {/* {readout goes here} */}
-          12
+          {this.props.magicNumber}
         </span>
       </div>
     );

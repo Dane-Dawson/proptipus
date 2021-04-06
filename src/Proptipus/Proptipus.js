@@ -39,6 +39,16 @@ class Proptipus extends React.Component {
 
   };
 
+  addOne = () => {
+    let newMagicNum = this.state.magicNumber + 1
+    this.setState({magicNumber: newMagicNum})
+  }
+
+  subtractOne = () => {
+    let newMagicNum = this.state.magicNumber - 1
+    this.setState({magicNumber: newMagicNum})
+  }
+
   render() {
     return (
       <div className="proptipus">
@@ -48,8 +58,8 @@ class Proptipus extends React.Component {
         <TentacleTwo card={this.state.favoriteFishGiOhCard} />
         <TentacleThree card={this.state.hatedFishGiOhCard} />
         <TentacleFour friendsList={this.state.friendsList}/>
-        <TentacleFive />
-        <TentacleSix />
+        <TentacleFive addOne={this.addOne} subtractOne={this.subtractOne}/>
+        <TentacleSix magicNumber={this.state.magicNumber}/>
         <TentacleSeven />
         <TentacleEight />
       </div>
