@@ -35,6 +35,17 @@ class Proptipus extends React.Component {
       { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: ""},
       { name: "Axolotl Al", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
       { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
+    ],
+    favoriteMovies: [
+        {title: "The Gills Have Eyes", genre: "Horror", rating: "3"},
+        {title: "Gone With the Fins", genre: "Family", rating: "4"},
+        {title: "Bonnie and Cod", genre: "Family", rating: "4"},
+        {title: "Finding Nemo", genre: "Family", rating: "4"},
+        {title: "Chumdog Millionaire", genre: "Suspense", rating: "4"},
+        {title: "12 Angry Fins", genre: "Suspense", rating: "4"},
+        {title: "The Blair Fish Project", genre: "Horror", rating: "2"},
+        {title: "28 Manta Rays Later", genre: "Horror", rating: "4"},
+        {title: "Beauty and The Breached Whale", genre: "Family", rating: "5"},
     ]
 
   };
