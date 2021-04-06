@@ -31,10 +31,9 @@ class Proptipus extends React.Component {
       description: "What a useless freaking fsh.",
     },
     friendsList: [
-      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "" },
-      { name: "Momtipus", contact: "OneCoolCephalapod@hotmail.com", socialMedia: "https://twitter.com/octopusfansclub" },
+      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "https://twitter.com/octopusfansclub" },
       { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: ""},
-      { name: "Allen the Axolotl", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
+      { name: "Axolotl Al", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
       { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
     ]
 
