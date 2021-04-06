@@ -11,11 +11,14 @@ class TentacleFour extends React.Component {
             <th>Email</th>
             <th>Address</th>
           </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
+          {this.props.friendsList.map((friend) =>
+            <tr>
+              <td>{friend.name}</td>
+              <td>{friend.contact}</td>
+              <td>{friend.socialMedia}</td>
+            </tr>
+          )
+          }
         </table>
       </div>
     );
