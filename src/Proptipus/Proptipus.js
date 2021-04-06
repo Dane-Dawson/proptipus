@@ -5,7 +5,7 @@ import TentacleTwo from "./Tentacles/TentacleTwo";
 import TentacleThree from "./Tentacles/TentacleThree";
 import TentacleFour from "./Tentacles/TentacleFour";
 import TentacleFive from "./Tentacles/TentacleFive";
-import TentacleSix from "./Tentacles/TentacleSix";
+import TentacleSix from "./Tentacles/TentacleSixth.js";
 import TentacleSeven from "./Tentacles/TentacleSeven";
 import TentacleEight from "./Tentacles/TentacleEight";
 import ProptipusBackground from "../images/Proptipus.png";
