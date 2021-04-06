@@ -4,24 +4,26 @@ class TentacleSeven extends React.Component {
   render() {
     return (
       <div className="tentacle-seven">
-      <span className="show-movies">Toggle Movie Show</span>
-      <br/>
+        <br />
+        <input
+          className="show-toggle"
+          type="radio"
+          value="show"
+          checked={null}
+          onChange={null}
+        />
+        <span className="show-text">Show</span>
+        <br />
         <input 
+        className="hide-toggle" 
         type="radio" 
-        value="show"
-        checked={null}
-        onChange={null}
-        /> Show
-        <br/>
-        <input 
-        type="radio" 
-        value="hide"
-        checked={null}
-        onChange={null}
-        /> Hide
-        <br/>
-        <span className="genre-picker">Pick a genre</span>
-        <select >
+        value="hide" 
+        checked={null} 
+        onChange={null} /> 
+        <span className="hide-text">Hide</span>
+        <br />
+        <span className="genre-picker">Genre?</span>
+        <select className="genre-selector">
           <option value="All">All</option>
           <option value="Horror">Horror</option>
           <option value="Suspense">Suspense</option>

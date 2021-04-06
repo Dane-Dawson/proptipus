@@ -44,7 +44,7 @@ class Proptipus extends React.Component {
         {title: "Chumdog Millionaire", genre: "Suspense", rating: "'What an oppor-tuna-ty!'"},
         {title: "12 Angry Fins", genre: "Suspense", rating: "`12 angry, shellfish public servants`"},
         {title: "The Blair Fish Project", genre: "Horror", rating: "'They must salmon all their courage...'"},
-        {title: "28 Manta Rays Later", genre: "Horror", rating: "'After a zombie attack they must ray-tion their supplies'"},
+        {title: "28 Manta Rays Later", genre: "Horror", rating: "'When zombis2 attack they ray-tion their supplies'"},
         {title: "Beauty and The Breached Whale", genre: "Family", rating: "'Who doesn't want someone to cuttle with?'"},
     ],
     showMovies: false,

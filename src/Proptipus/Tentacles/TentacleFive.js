@@ -14,9 +14,6 @@ class TentacleFive extends React.Component {
       <button className="magic-remote-button color-2" 
       onClick={() => this.props.addOne()}>+</button>
       <br/>
-      <span  className="magic-remote-disclaimer">
-      Proptipus to-do: Fix blinky light (batteries?)
-      </span>
       </div>
     );
   }

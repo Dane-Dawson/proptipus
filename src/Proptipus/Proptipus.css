@@ -34,8 +34,9 @@ span.tentacle-tag {
 
 div.tentacle-one {
   position: absolute;
-  top: 10px;
-  left: 120px;
+  transform: rotate(20deg);
+  top: 20px;
+  left: 130px;
   width: 200px;
   height: 250px;
   /* border: 3px solid #eaeb9e; */
@@ -69,6 +70,7 @@ span.punchline {
 
 div.tentacle-two {
   position: absolute;
+  transform: rotate(-5deg);
   top: 260px;
   left: 30px;
   width: 150px;
@@ -129,8 +131,9 @@ span.fish-attack {
 
 div.tentacle-three {
   position: absolute;
-  top: 255px;
-  left: 600px;
+  transform: rotate(12deg);
+  top: 230px;
+  left: 630px;
   width: 150px;
   height: 220px;
   border: 1px solid #020e1f;
@@ -142,8 +145,9 @@ div.tentacle-three {
 
 div.tentacle-four {
   position: absolute;
-  top: 45px;
-  left: 500px;
+  transform: rotate(-15deg);
+  top: 15px;
+  left: 450px;
   width: 350px;
   height: 200px;
   border-radius: 10px;
@@ -155,17 +159,17 @@ div.tentacle-four {
 }
 
 span.friends-header {
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    font-family: 'futura-bold';
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-family: "futura-bold";
 }
 
 #propti-friends {
-    position: absolute;
-    top: 47px;
-    left: 40px;
-  font-family: 'garamond-bold-italic';
+  position: absolute;
+  top: 47px;
+  left: 40px;
+  font-family: "garamond-bold-italic";
   font-size: 12px;
   border-collapse: collapse;
   width: 80%;
@@ -177,8 +181,6 @@ span.friends-header {
   padding: 3px;
 }
 
-
-
 #propti-friends th {
   padding-top: 3px;
   padding-bottom: 3px;
@@ -187,10 +189,11 @@ span.friends-header {
 
 div.tentacle-five {
   position: absolute;
-  top: 490px;
-  left: 33px;
-  width: 220px;
-  height: 150px;
+  transform: rotate(15deg);
+  top: 520px;
+  left: 100px;
+  width: 120px;
+  height: 100px;
   /* border: 3px solid #161616; */
   border-radius: 10px;
   background-image: url("../images/metal-texture.jpeg");
@@ -198,7 +201,7 @@ div.tentacle-five {
 }
 
 span.magic-remote-text {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   line-height: 1;
   color: #c6e2ff;
@@ -288,9 +291,10 @@ span.magic-remote-disclaimer {
 
 div.tentacle-six {
   position: absolute;
-  top: 500px;
-  left: 260px;
-  width: 200px;
+  transform: rotate(-60deg);
+  top: 430px;
+  left: 290px;
+  width: 130px;
   height: 90px;
   /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
@@ -312,24 +316,67 @@ span.number-readout {
 
 div.tentacle-seven {
   position: absolute;
-  top: 520px;
-  left: 390px;
-  width: 95px;
+  transform: rotate(-43deg);
+  top: 530px;
+  left: 285px;
+  width: 195px;
   height: 120px;
-  border: 3px solid #eaeb9e;
+  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
-  background-color: blanchedalmond;
-  opacity: 0.8;
+  background-image: url("../images/DriftwoodPlank.png");
+  background-size: 200px;
+  /* background-color: blanchedalmond; */
+  opacity: 0.98;
 }
 
+input.show-toggle {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+}
+
+span.show-text {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+}
+
+input.hide-toggle {
+  position: absolute;
+  top: 75px;
+  left: 25px;
+}
+
+span.hide-text {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+}
+
+span.show-movies {
+  font-size: 12px;
+}
+
+span.genre-picker {
+    position: absolute;
+  top: 45px;
+  left: 110px;
+}
+
+select.genre-selector {
+    position: absolute;
+    top: 70px;
+    left: 95px; 
+}
 div.tentacle-eight {
   position: absolute;
-  top: 480px;
-  left: 540px;
+  transform: rotate(12deg);
+  top: 460px;
+  left: 520px;
   width: 270px;
-  height: 200px;
-  border: 3px solid #eaeb9e;
+  height: 210px;
+  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
   overflow: scroll;
@@ -340,22 +387,26 @@ div.tentacle-eight {
 
   justify-content: space-evenly;
 
-  background-color: blanchedalmond;
-  opacity: 0.8;
+  background-image: url("../images/MessageBoard.jpg");
+  background-size: 270px;
+  opacity: 0.98;
 }
 
 span.movie-card {
-    width: 30%;
-    height: 33%;
-    border: 3px solid #eaeb9e;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 33%;
+    margin: 5px;
+    padding: 5px 10px;
+    background-image: url("../images/StickyNote.png");
+    background-size: 100%;
+  border-radius: 9px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 span.movie-title {
-    font-size: 10px;
+  font-size: 15px;
+  color: #361bd1e7;
 }
 
 span.movie-rating {
-    font-size: 8px;
+  font-size: 10px;
 }
-
