@@ -9,8 +9,8 @@ class TentacleSeven extends React.Component {
           className="show-toggle"
           type="radio"
           value="show"
-          checked={null}
-          onChange={null}
+          checked={this.props.show}
+          onClick={()=>this.props.toggle('show')}
         />
         <span className="show-text">Show</span>
         <br />
@@ -18,12 +18,12 @@ class TentacleSeven extends React.Component {
         className="hide-toggle" 
         type="radio" 
         value="hide" 
-        checked={null} 
-        onChange={null} /> 
+        checked={!this.props.show} 
+        onClick={()=>this.props.toggle('hide')} /> 
         <span className="hide-text">Hide</span>
         <br />
         <span className="genre-picker">Genre?</span>
-        <select className="genre-selector">
+        <select className="genre-selector" onChange={(e)=>this.props.setFilter(e.target.value)}>
           <option value="All">All</option>
           <option value="Horror">Horror</option>
           <option value="Suspense">Suspense</option>

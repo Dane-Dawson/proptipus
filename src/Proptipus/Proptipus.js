@@ -45,7 +45,7 @@ class Proptipus extends React.Component {
         {title: "12 Angry Fins", genre: "Suspense", rating: "`12 angry, shellfish public servants`"},
         {title: "The Blair Fish Project", genre: "Horror", rating: "'They must salmon all their courage...'"},
         {title: "28 Manta Rays Later", genre: "Horror", rating: "'When zombis2 attack they ray-tion their supplies'"},
-        {title: "Beauty and The Breached Whale", genre: "Family", rating: "'Who doesn't want someone to cuttle with?'"},
+        {title: "Beauty & The Breached Whale", genre: "Family", rating: "'He just wants to cuttle'"},
     ],
     showMovies: false,
     moviesFilter: "Any"
@@ -61,6 +61,22 @@ class Proptipus extends React.Component {
     this.setState({magicNumber: newMagicNum})
   }
 
+  toggleShowHide = (value) => {
+    value === "show" ? this.setState({showMovies:true}) : this.setState({showMovies:false})
+  }
+
+  sortMovies = () => {
+    if (this.state.moviesFilter === "Any" ){
+      return this.state.favoriteMovies
+    }
+    let filteredArray = this.state.favoriteMovies.filter(movie => movie.genre === this.state.moviesFilter)
+    return filteredArray
+  }
+
+  setMovieFilter = (value) => {
+    this.setState({moviesFilter: value})
+  }
+
   render() {
     return (
       <div className="proptipus">
@@ -72,8 +88,8 @@ class Proptipus extends React.Component {
         <TentacleFour friendsList={this.state.friendsList}/>
         <TentacleFive addOne={this.addOne} subtractOne={this.subtractOne}/>
         <TentacleSix magicNumber={this.state.magicNumber}/>
-        <TentacleSeven />
-        <TentacleEight movies={this.state.favoriteMovies}/>
+        <TentacleSeven setFilter={this.setMovieFilter} toggle={this.toggleShowHide} show={this.state.showMovies}/>
+        <TentacleEight movies={this.state.showMovies ? this.sortMovies() : []}/>
       </div>
     );
   }

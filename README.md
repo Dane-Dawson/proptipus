@@ -1,6 +1,6 @@
 # Proptipus the Prodigious cePhaloPod.
 
-This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental labwork to reinforce and solidy the concepts needed to work within the React framework with it's `state`.
+This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental labwork to reinforce and solidy the concepts needed to work within the React framework with it's `state`. For best results when viewing in the browser view full screen for proportions.
 
 To install this project run 
 ```

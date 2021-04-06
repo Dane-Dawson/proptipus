@@ -26,17 +26,17 @@ span.tentacle-tag {
   box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
   background-color: rgba(3, 193, 218, 0.56);
   border-radius: 15px;
-  top: 300px;
-  left: 320px;
-  height: 40px;
+  top: 330px;
+  left: 300px;
+  height: 50px;
   z-index: 100;
 }
 
 div.tentacle-one {
   position: absolute;
   transform: rotate(20deg);
-  top: 20px;
-  left: 130px;
+  top: 10px;
+  left: 100px;
   width: 200px;
   height: 250px;
   /* border: 3px solid #eaeb9e; */
@@ -72,7 +72,7 @@ div.tentacle-two {
   position: absolute;
   transform: rotate(-5deg);
   top: 260px;
-  left: 30px;
+  left: 5px;
   width: 150px;
   height: 220px;
   border: 1px solid #020e1f;
@@ -131,9 +131,9 @@ span.fish-attack {
 
 div.tentacle-three {
   position: absolute;
-  transform: rotate(12deg);
+  transform: rotate(18deg);
   top: 230px;
-  left: 630px;
+  left: 610px;
   width: 150px;
   height: 220px;
   border: 1px solid #020e1f;
@@ -146,11 +146,11 @@ div.tentacle-three {
 div.tentacle-four {
   position: absolute;
   transform: rotate(-15deg);
-  top: 15px;
-  left: 450px;
+  top: -5px;
+  left: 480px;
   width: 350px;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 25px;
 
   background-image: url("../images/AddressBook.png");
   background-size: 350px;
@@ -292,8 +292,8 @@ span.magic-remote-disclaimer {
 div.tentacle-six {
   position: absolute;
   transform: rotate(-60deg);
-  top: 430px;
-  left: 290px;
+  top: 450px;
+  left: 280px;
   width: 130px;
   height: 90px;
   /* border: 3px solid #eaeb9e; */
@@ -316,9 +316,9 @@ span.number-readout {
 
 div.tentacle-seven {
   position: absolute;
-  transform: rotate(-43deg);
-  top: 530px;
-  left: 285px;
+  transform: rotate(-49deg);
+  top: 550px;
+  left: 295px;
   width: 195px;
   height: 120px;
   /* border: 3px solid #eaeb9e; */
@@ -372,7 +372,7 @@ select.genre-selector {
 div.tentacle-eight {
   position: absolute;
   transform: rotate(12deg);
-  top: 460px;
+  top: 480px;
   left: 520px;
   width: 270px;
   height: 210px;
@@ -398,6 +398,7 @@ span.movie-card {
     padding: 5px 10px;
     background-image: url("../images/StickyNote.png");
     background-size: 100%;
+    background-repeat: no-repeat;
   border-radius: 9px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
