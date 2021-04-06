@@ -31,10 +31,13 @@ class Proptipus extends React.Component {
       description: "What a useless freaking fsh.",
     },
     friendsList: [
-      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "N/A (thank God)" },
+      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "" },
       { name: "Momtipus", contact: "OneCoolCephalapod@hotmail.com", socialMedia: "https://twitter.com/octopusfansclub" },
-      { name: "Allen the Axolotl", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" }
-    ],
+      { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: ""},
+      { name: "Allen the Axolotl", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
+      { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
+    ]
+
   };
 
   render() {
@@ -45,7 +48,7 @@ class Proptipus extends React.Component {
         <TentacleOne punchline={this.state.punchline} />
         <TentacleTwo card={this.state.favoriteFishGiOhCard} />
         <TentacleThree card={this.state.hatedFishGiOhCard} />
-        <TentacleFour />
+        <TentacleFour friendsList={this.state.friendsList}/>
         <TentacleFive />
         <TentacleSix />
         <TentacleSeven />
