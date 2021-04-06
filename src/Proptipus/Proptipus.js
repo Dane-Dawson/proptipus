@@ -37,15 +37,15 @@ class Proptipus extends React.Component {
       { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
     ],
     favoriteMovies: [
-        {title: "The Gills Have Eyes", genre: "Horror", rating: "3"},
-        {title: "Gone With the Fins", genre: "Family", rating: "4"},
-        {title: "Bonnie and Cod", genre: "Family", rating: "4"},
-        {title: "Finding Nemo", genre: "Family", rating: "4"},
-        {title: "Chumdog Millionaire", genre: "Suspense", rating: "4"},
-        {title: "12 Angry Fins", genre: "Suspense", rating: "4"},
-        {title: "The Blair Fish Project", genre: "Horror", rating: "2"},
-        {title: "28 Manta Rays Later", genre: "Horror", rating: "4"},
-        {title: "Beauty and The Breached Whale", genre: "Family", rating: "5"},
+        {title: "The Gills Have Eyes", genre: "Horror", rating: "'Left me with baited breath'"},
+        {title: "Gone With the Fins", genre: "Family", rating: "'WWII - an important fishue'"},
+        {title: "Bonnie and Cod", genre: "Family", rating: "'Most affable criminals you can sea'"},
+        {title: "Finding Nemo", genre: "Family", rating: "'I love this movie'"},
+        {title: "Chumdog Millionaire", genre: "Suspense", rating: "'What an oppor-tuna-ty!'"},
+        {title: "12 Angry Fins", genre: "Suspense", rating: "`12 angry, shellfish public servants`"},
+        {title: "The Blair Fish Project", genre: "Horror", rating: "'They must salmon all their courage...'"},
+        {title: "28 Manta Rays Later", genre: "Horror", rating: "'After a zombie attack they must ray-tion their supplies'"},
+        {title: "Beauty and The Breached Whale", genre: "Family", rating: "'Who doesn't want someone to cuttle with?'"},
     ],
     showMovies: false,
     moviesFilter: "Any"
@@ -63,7 +63,7 @@ class Proptipus extends React.Component {
         <TentacleFive />
         <TentacleSix />
         <TentacleSeven />
-        <TentacleEight />
+        <TentacleEight movies={this.state.favoriteMovies}/>
       </div>
     );
   }

@@ -4,8 +4,21 @@ class TentacleEight extends React.Component {
   render() {
     return (
       <div className="tentacle-eight">
-      <span className="tentacle-tag">Tentacle 8 - Conditional Render</span>
-        <p>display for tentacle 7</p>
+  {this.props.movies.map(movie=>{
+    return (
+        <span className="movie-card">
+          <span className="movie-title">{movie.title}</span>
+          <br />
+          <span className="movie-rating">{movie.rating}</span>
+          <br />
+        
+        </span>
+
+    )
+  })
+
+  }
+
       </div>
     );
   }
