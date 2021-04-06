@@ -24,23 +24,25 @@ class Proptipus extends React.Component {
         "Robust and lively, Tetra make a great addition to any fish army.",
     },
     hatedFishGiOhCard: {
-        name: "No Eye Fsh",
-        image: "https://scx2.b-cdn.net/gfx/news/2017/howdoblindca.jpg",
-        type: "[DIVINE-BEAST]",
-        attack: "How?",
-        description:
-          "What a useless freaking fsh.",
-      },
+      name: "No Eye Fsh",
+      image: "https://scx2.b-cdn.net/gfx/news/2017/howdoblindca.jpg",
+      type: "[DIVINE-BEAST]",
+      attack: "How?",
+      description: "What a useless freaking fsh.",
+    },
+    friendsList: [
+      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "" }
+    ],
   };
-  
+
   render() {
     return (
       <div className="proptipus">
         <img className="logo" src={ProptipusLogo} />
         <img className="proptipus-image" src={ProptipusBackground} />
         <TentacleOne punchline={this.state.punchline} />
-        <TentacleTwo card={this.state.favoriteFishGiOhCard}/>
-        <TentacleThree card={this.state.hatedFishGiOhCard}/>
+        <TentacleTwo card={this.state.favoriteFishGiOhCard} />
+        <TentacleThree card={this.state.hatedFishGiOhCard} />
         <TentacleFour />
         <TentacleFive />
         <TentacleSix />
