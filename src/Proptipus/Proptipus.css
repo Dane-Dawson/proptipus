@@ -1,8 +1,13 @@
 .proptipus {
-  /* justify-content: center; */
-  /* background-color: aqua; */
   position: relative;
-  width: 50vw;
+  top: 45px;
+  width: 150px;
+  /* height: 600px; */
+}
+
+span.tentacle-tag {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .proptipus-image {
@@ -10,42 +15,51 @@
   border-radius: 75px;
   vertical-align: center;
 
-  top: 5vh;
-  left: 20vw;
-  width: 50vw;
+  width: 600px;
   margin: 0;
   position: absolute;
 }
+
 .logo {
     position: relative;
     box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
     background-color: rgba(3, 193, 218, 0.56);
     border-radius: 15px;
-    top: 29vw;
-    left: 20vw;
-    height: 6vw;
+    top: 300px;
+    left: 320px;
+    height: 40px;
     z-index: 100;
 }
 
 div.tentacle-one {
   position: absolute;
-  top: 5vw;
-  left: 18vw;
-  width: 25vh;
-  height: 15vw;
+  top: 20px;
+  left: 120px;
+  width: 200px;
+  height: 160px;
   border: 3px solid #eaeb9e;
   border-radius: 10px;
 
   background-color: blanchedalmond;
   opacity: 0.8;
 }
+span.joke-setup {
+    font-family: fantasy;
+    color: rgba(2, 57, 14, 0.885);
+    font-style: italic;
+}
+span.punchline {
+    color: rgba(102, 23, 3, 0.885);
+    font-family: fantasy;
+    font-size: 12px;
+}
 
 div.tentacle-two {
     position: absolute;
-    top: 22vw;
-    left: 10vw;
-    width: 25vh;
-    height: 15vw;
+    top: 260px;
+    left: 30px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -55,10 +69,10 @@ div.tentacle-two {
 
   div.tentacle-three {
     position: absolute;
-    top: 22vw;
-    left: 63vw;
-    width: 25vh;
-    height: 15vw;
+    top: 300px;
+    left: 600px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -68,10 +82,10 @@ div.tentacle-two {
 
   div.tentacle-four {
     position: absolute;
-    top: 5vw;
-    left: 60vw;
-    width: 30vh;
-    height: 15vw;
+    top: 45px;
+    left: 550px;
+    width: 300px;
+    height: 200px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -81,10 +95,10 @@ div.tentacle-two {
 
   div.tentacle-five {
     position: absolute;
-    top: 42vw;
-    left: 12vw;
-    width: 30vh;
-    height: 13vw;
+    top: 470px;
+    left: 33px;
+    width: 220px;
+    height: 150px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -94,10 +108,10 @@ div.tentacle-two {
 
   div.tentacle-six {
     position: absolute;
-    top: 40vw;
-    left: 33vw;
-    width: 20vh;
-    height: 13vw;
+    top: 510px;
+    left: 290px;
+    width: 75px;
+    height: 75px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -107,10 +121,10 @@ div.tentacle-two {
 
   div.tentacle-seven {
     position: absolute;
-    top: 41vw;
-    left: 47vw;
-    width: 15vh;
-    height: 13vw;
+    top: 520px;
+    left: 390px;
+    width: 95px;
+    height: 120px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   
@@ -120,10 +134,10 @@ div.tentacle-two {
 
   div.tentacle-eight {
     position: absolute;
-    top: 42vw;
-    left: 60vw;
-    width: 20vh;
-    height: 13vw;
+    top: 480px;
+    left: 540px;
+    width: 220px;
+    height: 120px;
     border: 3px solid #eaeb9e;
     border-radius: 10px;
   

@@ -4,7 +4,8 @@ class TentacleEight extends React.Component {
   render() {
     return (
       <div className="tentacle-eight">
-        <p>This tentacle (8) is a conditional render that toggles based on selection made on tentacle 7</p>
+      <span className="tentacle-tag">Tentacle 8 - Conditional Render</span>
+        <p>display for tentacle 7</p>
       </div>
     );
   }

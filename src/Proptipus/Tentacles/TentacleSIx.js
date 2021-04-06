@@ -4,7 +4,9 @@ class TentacleSix extends React.Component {
   render() {
     return (
       <div className="tentacle-six">
-        <p>This tentacle (6) should hold a display that displays a number stored in Proptipus' head (state).</p>
+        <span className="tentacle-tag">Tentacle 6 - Number Display</span>
+        <br />
+        <span className="number-readout">0</span>
       </div>
     );
   }

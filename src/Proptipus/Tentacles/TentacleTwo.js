@@ -4,7 +4,9 @@ class TentacleTwo extends React.Component {
   render() {
     return (
       <div className="tentacle-two">
-        <p>This tentacle (2) should recieve an object as a prop, and use different keys from that object to render values</p>
+      <span className="tentacle-tag">Tentacle 2 - Object render</span>
+
+        <p>Class Component Object render</p>
       </div>
     );
   }
