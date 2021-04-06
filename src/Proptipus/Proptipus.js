@@ -12,8 +12,8 @@ import ProptipusBackground from "../images/Proptipus.png";
 import ProptipusLogo from "../images/ProptipusLogo.png";
 class Proptipus extends React.Component {
   state = {
-      punchline: "Ten-tickles! Get it? Like... ...tentacles...because... please just...please be my friend.",
-
+    punchline: "Ten-tickles! Get it? Like... ...tentacles...because... please just...please be my friend.",
+    magicNumber: 42,
   };
 
   render() {
@@ -21,7 +21,7 @@ class Proptipus extends React.Component {
       <div className="proptipus">
         <img className="logo" src={ProptipusLogo} />
         <img className="proptipus-image" src={ProptipusBackground} />
-        <TentacleOne punchline={this.state.punchline}/>
+        <TentacleOne punchline={this.state.punchline} />
         <TentacleTwo />
         <TentacleThree />
         <TentacleFour />

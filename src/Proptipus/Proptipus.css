@@ -2,145 +2,256 @@
   position: relative;
   top: 45px;
   width: 150px;
-  /* height: 600px; */
 }
 
 span.tentacle-tag {
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .proptipus-image {
   box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
   border-radius: 75px;
   vertical-align: center;
-
+  /* How do I center this son of a bitch!?  
+    Note, doing so may require repositioning all tentacle divs...worth it? */
   width: 600px;
   margin: 0;
   position: absolute;
 }
 
 .logo {
-    position: relative;
-    box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
-    background-color: rgba(3, 193, 218, 0.56);
-    border-radius: 15px;
-    top: 300px;
-    left: 320px;
-    height: 40px;
-    z-index: 100;
+  position: relative;
+  box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
+  background-color: rgba(3, 193, 218, 0.56);
+  border-radius: 15px;
+  top: 300px;
+  left: 320px;
+  height: 40px;
+  z-index: 100;
 }
 
 div.tentacle-one {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 120px;
   width: 200px;
-  height: 160px;
+  height: 250px;
+  /* border: 3px solid #eaeb9e; */
+  border-radius: 10px;
+
+  background-image: url("../images/amazing-joke-holder.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  /* background-color: blanchedalmond; */
+  opacity: 0.98;
+}
+span.joke-setup {
+    position: absolute;
+  font-family: fantasy;
+  color: rgba(2, 57, 14, 0.885);
+  font-style: italic;
+  width: 150px;
+  left: 20px;
+  top: 42px;
+}
+
+span.punchline {
+    position: absolute;
+  color: rgba(102, 23, 3, 0.885);
+  font-family: fantasy;
+  font-size: 12px;
+  width: 150px;
+  left: 22px;
+  top: 120px;
+}
+
+div.tentacle-two {
+  position: absolute;
+  top: 260px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
   border: 3px solid #eaeb9e;
   border-radius: 10px;
 
   background-color: blanchedalmond;
   opacity: 0.8;
 }
-span.joke-setup {
-    font-family: fantasy;
-    color: rgba(2, 57, 14, 0.885);
-    font-style: italic;
+
+div.tentacle-three {
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #eaeb9e;
+  border-radius: 10px;
+
+  background-color: blanchedalmond;
+  opacity: 0.8;
 }
-span.punchline {
-    color: rgba(102, 23, 3, 0.885);
-    font-family: fantasy;
-    font-size: 12px;
+
+div.tentacle-four {
+  position: absolute;
+  top: 45px;
+  left: 550px;
+  width: 300px;
+  height: 200px;
+  border: 3px solid #eaeb9e;
+  border-radius: 10px;
+
+  background-color: blanchedalmond;
+  opacity: 0.8;
 }
 
-div.tentacle-two {
-    position: absolute;
-    top: 260px;
-    left: 30px;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+div.tentacle-five {
+  position: absolute;
+  top: 470px;
+  left: 33px;
+  width: 220px;
+  height: 150px;
+  /* border: 3px solid #161616; */
+  border-radius: 10px;
+  background-image: url("../images/metal-texture.jpeg");
+  opacity: 0.92;
+}
 
-  div.tentacle-three {
-    position: absolute;
-    top: 300px;
-    left: 600px;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+span.magic-remote-text {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+  color: #c6e2ff;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
 
-  div.tentacle-four {
-    position: absolute;
-    top: 45px;
-    left: 550px;
-    width: 300px;
-    height: 200px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
   }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 235, 242, 0.58),
+      0 0 22px rgba(60, 175, 242, 0.84), 0 0 38px rgba(30, 157, 242, 0.88),
+      0 0 60px rgb(30, 210, 242);
+  }
+}
 
-  div.tentacle-five {
-    position: absolute;
-    top: 470px;
-    left: 33px;
-    width: 220px;
-    height: 150px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+.buttons {
+  margin: 5%;
+  text-align: center;
+}
 
-  div.tentacle-six {
-    position: absolute;
-    top: 510px;
-    left: 290px;
-    width: 75px;
-    height: 75px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+.magic-remote-button {
+  width: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
 
-  div.tentacle-seven {
-    position: absolute;
-    top: 520px;
-    left: 390px;
-    width: 95px;
-    height: 120px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 
-  div.tentacle-eight {
-    position: absolute;
-    top: 480px;
-    left: 540px;
-    width: 220px;
-    height: 120px;
-    border: 3px solid #eaeb9e;
-    border-radius: 10px;
-  
-    background-color: blanchedalmond;
-    opacity: 0.8;
-  }
+.magic-remote-button:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.magic-remote-button:focus {
+  outline: none;
+}
+
+.magic-remote-button.color-1 {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.magic-remote-button.color-2 {
+  background-image: linear-gradient(
+    to right,
+    #009245,
+    #fcee21,
+    #00a8c5,
+    #d9e021
+  );
+  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+span.magic-remote-disclaimer {
+  font-size: 8px;
+  color: rgba(214, 107, 7, 0.885);
+  background-color: snow;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+div.tentacle-six {
+  position: absolute;
+  top: 500px;
+  left: 260px;
+  width: 200px;
+  height: 90px;
+  /* border: 3px solid #eaeb9e; */
+  border-radius: 10px;
+
+  background-image: url("../images/Proptipip.png");
+  background-size: 130px;
+  background-repeat: no-repeat;
+  /* background-color: blanchedalmond; */
+  opacity: 1;
+}
+
+span.number-readout {
+  position: absolute;
+  left: 55px;
+  color: rgb(8, 133, 4);
+  font: 50px Inconsolata, monospace;
+  text-shadow: 0 0 5px #37d806;
+}
+
+div.tentacle-seven {
+  position: absolute;
+  top: 520px;
+  left: 390px;
+  width: 95px;
+  height: 120px;
+  border: 3px solid #eaeb9e;
+  border-radius: 10px;
+
+  background-color: blanchedalmond;
+  opacity: 0.8;
+}
+
+div.tentacle-eight {
+  position: absolute;
+  top: 480px;
+  left: 540px;
+  width: 220px;
+  height: 120px;
+  border: 3px solid #eaeb9e;
+  border-radius: 10px;
+
+  background-color: blanchedalmond;
+  opacity: 0.8;
+}

@@ -4,10 +4,36 @@ Proptipus the cephalopod has a plethora of pretty pleasant past-times, but prior
 
 *whew*, that was a mouthful!
 
-Proptipus is an octopus made out of React components, consisting of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Octopus` component) to his `Tentacle` component how they should.
+Proptipus is an octopus made out of React components, consisting of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
 
-Tentacle 1
+**NOTE**
 
+You should NEVER have to manually change the state for this project (meaning via a code editor)! Proptipus knows everything already, you should only be adding functions and passing props via interactions through the page itself!
+
+## Tentacle 1 - Passing a value as a prop
+
+Proptipus is trying to write down the punch line to his favorite joke, but can't seem to get his tentacle to respond. Currently stored in state as `punchline`, can you help pass down the string to display in the proper `<span>` tag?
+
+## Tentacle 2 - Passing an object as a prop, class component
+
+## Tentacle 3 - Passing an object as a prop, functional component
+
+## Tentacle 4 - Passing an array as a prop
+
+## Tentacles 5 and 6 - Bubbling events and re-rendering via state change
+
+Proptipus is quite the inventor. Just last week he created a `Magic Remote` that connects from his fifth tentcle to his brain, and then to his `Prop-boy`™️ held in his sixth tentacle! It's amazing! Or at least it will be, once you help him fix it...
+
+First, we need to connect the `Prop-boy`™️ to the `magicNumber` stored safely in Proptipus' mind (`state` in the `Proptipus` component). In `TentacleSix` you will see a `<span>` ready to display his magic number. 
+
+Next we need to connect the `Magic Remote` buttons to correctly increment and decrement the magic number. 
+
+Remember!
+>Since the number is stored safely in his mind (the `Proptipus` component), the logic that changes that number will need to live in the same component.
+
+When everything is connected correctly, we should be able to see our magic number displayed lovingly on our `Prop-boy`™️ and affect it by pushing both the buttons on the `Magic Remote`
+
+## Tentacles 7 and 8 - Bubbling and re-rendering conditional render
 
 ## Planning/ideation
 
