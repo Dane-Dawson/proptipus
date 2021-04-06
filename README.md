@@ -56,6 +56,9 @@ When everything is connected correctly, we should be able to see our magic numbe
 
 ## Tentacles 7 and 8 - Bubbling and re-rendering conditional render
 
+https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
+
+
 ## Planning/ideation
 
 -note, something wonky going on with TentacleSix import...
