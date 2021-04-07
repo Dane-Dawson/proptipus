@@ -162,15 +162,18 @@ span.friends-header {
   position: absolute;
   top: 20px;
   left: 100px;
-  font-family: "futura-bold";
+  /* font-family: "futura-bold"; */
 }
-
+@font-face {
+    font-family: proptiDrew;
+    src: url(../fonts/GloriaHallelujah-Regular.ttf)
+}
 #propti-friends {
   position: absolute;
   top: 47px;
   left: 40px;
-  font-family: "garamond-bold-italic";
-  font-size: 12px;
+  font-family: proptiDrew;
+  font-size: 10px;
   border-collapse: collapse;
   width: 80%;
 }
@@ -178,13 +181,16 @@ span.friends-header {
 #propti-friends td,
 #propti-friends th {
   /* border: 1px solid #ddd; */
-  padding: 3px;
+  padding: 1px;
 }
 
 #propti-friends th {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   text-align: left;
+}
+img.bird-logo {
+    width: 17px;
 }
 
 div.tentacle-five {

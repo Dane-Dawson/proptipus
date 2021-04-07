@@ -32,7 +32,7 @@ class Proptipus extends React.Component {
     },
     friendsList: [
       { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "https://twitter.com/octopusfansclub" },
-      { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: ""},
+      { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: "https://en.wikipedia.org/wiki/Krill"},
       { name: "Axolotl Al", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
       { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
     ],

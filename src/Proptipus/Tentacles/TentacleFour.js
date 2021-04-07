@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../images/BirdLogo.png"
 
 class TentacleFour extends React.Component {
   render() {
@@ -15,7 +16,11 @@ class TentacleFour extends React.Component {
             <tr>
               <td>{friend.name}</td>
               <td>{friend.contact}</td>
-              <td>{friend.socialMedia}</td>
+              <td>
+                <a href={friend.socialMedia}>
+                  <img className= "bird-logo" src={Logo}/>
+                </a>
+              </td>
             </tr>
           )
           }
