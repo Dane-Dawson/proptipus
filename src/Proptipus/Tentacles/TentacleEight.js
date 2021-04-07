@@ -1,19 +1,22 @@
 import React from "react";
 
 class TentacleEight extends React.Component {
+
   render() {
     return (
       <div className="tentacle-eight">
-        {/* This span is the movie card we are reproducing for each movie */}
-        <span className="movie-card">
-          <span className="movie-title">{/* Movie title goes here */}</span>
-          <br />
-          <span className="movie-rating">{/* Movie rating goes here */}</span>
-          <br />
-        
-        </span>
-        
-
+        { this.props.showMovies ? (
+          this.props.movies.map((movie, index) => (
+            <span className="movie-card" key={index}>
+              <span className="movie-title">{movie.title}</span>
+              <br />
+              <span className="movie-rating">{movie.rating}</span>
+              <br />
+            </span>
+          ))
+        ) : (
+          null
+        )} 
       </div>
     );
   }
