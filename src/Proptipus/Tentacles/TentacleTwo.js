@@ -1,4 +1,5 @@
 import React from "react";
+import tempImg from "../../images/SadFish.jpeg"
 
 class TentacleTwo extends React.Component {
 
@@ -15,26 +16,26 @@ class TentacleTwo extends React.Component {
   render() {
     return (
       <div className="tentacle-two">
-        <span className="fish-name">
-          { this.card.name }
-        </span>
+      <span className="fish-name">
+        { null /* Fish name goes here */}
+      </span>
 
-        <img className="fish-image" 
-        src={  this.card.image } alt='fish-gi-oh avatar' />
+      <img className="fish-image" 
+      src={ tempImg /* Fish image goes here */} />
 
-        <span className="fish-type">
-          { this.card.type }
-        </span>
+      <span className="fish-type">
+        { null /* Fish type goes here */}
+      </span>
 
-        <span className="fish-description">
-          { this.card.description }
-        </span>
+      <span className="fish-description">
+        { null /* Fish description goes here */}
+      </span>
 
-        <span className="fish-attack">
-          { this.card.attack }
-        </span>
+      <span className="fish-attack">
+        { null /* Fish attack goes here */}
+      </span>
 
-      </div>
+    </div>
     );
   }
 }

@@ -100,38 +100,6 @@ class Proptipus extends React.Component {
   };
 
   // This is where you will be writing most of your functions!
-  increaseCount = () => {
-    this.setState({
-      ...this.state,
-      magicNumber: this.state.magicNumber + 1,
-    });
-  };
-
-  decreaseCount = () => {
-    this.setState({
-      ...this.state,
-      magicNumber: this.state.magicNumber - 1,
-    });
-  };
-
-  toggleMovies = (value) => {
-    this.setState({
-      ...this.state,
-      showMovies:
-        value === "show"
-          ? (this.state.showMovies = true)
-          : value === "hide"
-          ? (this.state.showMovies = false)
-          : !this.state.showMovies,
-    });
-  };
-
-  changeMoviesFilter = (value) => {
-    this.setState({
-      ...this.state,
-      moviesFilter: value,
-    });
-  };
 
   render() {
     return (
@@ -142,30 +110,14 @@ class Proptipus extends React.Component {
           src={ProptipusBackground}
           alt="background"
         />
-        <TentacleOne punchline={this.state.punchline} />
-        <TentacleTwo fishGiOhCard={this.state.favoriteFishGiOhCard} />
-        <TentacleThree fishGiOhCard={this.state.hatedFishGiOhCard} />
-        <TentacleFour friendsList={this.state.friendsList} />
-        <TentacleFive
-          increaseCount={this.increaseCount}
-          decreaseCount={this.decreaseCount}
-        />
-        <TentacleSix magicNumber={this.state.magicNumber} />
-        <TentacleSeven
-          showMovies={this.state.showMovies}
-          toggleMovies={this.toggleMovies}
-          changeMoviesFilter={this.changeMoviesFilter}
-        />
-        <TentacleEight
-          movies={
-            this.state.moviesFilter === "All"
-              ? this.state.favoriteMovies
-              : this.state.favoriteMovies.filter(
-                  (movie) => movie.genre === this.state.moviesFilter
-                )
-          }
-          showMovies={this.state.showMovies}
-        />
+        <TentacleOne/>
+        <TentacleTwo/>
+        <TentacleThree/>
+        <TentacleFour/>
+        <TentacleFive/>
+        <TentacleSix/>
+        <TentacleSeven/>
+        <TentacleEight/>
       </div>
     );
   }

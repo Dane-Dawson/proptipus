@@ -1,28 +1,28 @@
 import React from "react";
+import tempImg from "../../images/SadFish.jpeg"
 
 function TentacleThree({ fishGiOhCard }){
 
     return (
       <div className="tentacle-three">
       <span className="fish-name">
-          { fishGiOhCard.name }
+          {/* Fish name goes here */}
         </span>
 
         <img className="fish-image" 
-        src={ fishGiOhCard.image }
-        alt='hated fish-gi-oh card' 
+        src={ tempImg/* Fish image goes here */} 
         />
 
         <span className="fish-type">
-          { fishGiOhCard.type }
+          {/* Fish type goes here */}
         </span>
 
         <span className="fish-description">
-          { fishGiOhCard.description }
+          {/* Fish description goes here */}
         </span>
 
         <span className="fish-attack">
-          { fishGiOhCard.attack }
+          {/* Fish attack goes here */}
         </span>
       </div>
     );

@@ -2,10 +2,6 @@ import React from "react";
 
 class TentacleFive extends React.Component {
 
-  increaseCount = this.props.increaseCount
-
-  decreaseCount = this.props.decreaseCount
-
   render() {
     return (
       <div className="tentacle-five">
@@ -15,9 +11,9 @@ class TentacleFive extends React.Component {
       <span className="magic-remote-text">Remote</span>
       <br/>
       <button className="magic-remote-button color-1" 
-      onClick={this.decreaseCount}>-</button>
+      onClick={null /* Decrement function goes here */}>-</button>
       <button className="magic-remote-button color-2" 
-      onClick={this.increaseCount}>+</button>
+      onClick={null /* Increment function goes here */}>+</button>
       <br/>
       </div>
     );
