@@ -1,6 +1,6 @@
-# Proptipus the Prodigious cePhaloPod.
+# Proptipus Props Practice
 
-This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental labwork to reinforce and solidy the concepts needed to work within the React framework with it's `state`. For best results when viewing in the browser view full screen for proportions.
+This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidy the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather demonstrates some common ways props are used within React for you to explore and experiment with.
 
 To install this project run 
 ```
@@ -12,24 +12,34 @@ npm start
 ```
 Now let's get to the fun!
 
+# Proptipus the Prodigious cePhaloPod.
 
 Proptipus the cephalopod has a plethora of pretty pleasant past-times, but priorly preconcieved postulations prevent our poor Proptipus from performing his practical pursuits.
 
 *whew*, that was a mouthful!
 
-Proptipus is an octopus made out of React components, consisting of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
+Proptipus is an octopus made out of React components. He consists of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
 
 **NOTE**
 
-You should NEVER have to manually change the state for this project (meaning via a code editor)! Proptipus knows everything already, you should only be adding functions and passing props via interactions through the page itself!
+You should NEVER have to manually change the state for this project, meaning the `state` portion of `Proptipus.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
+
+There will be comments in each component describing what kind of data should be placed where, so make sure we read the direections and look at the corresponding `Tentacle` component...
+
+
+![And we're off](https://i.imgur.com/SpWxL2e.gif)
+
+...And we're off!
 
 ## Tentacle 1 - Passing a value as a prop
 
-Proptipus is trying to write down the punch line to his favorite joke, but can't seem to get his tentacle to respond. Currently stored in state as `punchline`, can you help pass down the string to display in the proper `<span>` tag?
+Proptipus is trying to write down the punch line to his favorite joke, but can't seem to get his tentacle to respond. Currently stored in state as `punchline`, can you help pass down the string to his `TentacleOne` to display in the proper `<span>` tag?
 
 ## Tentacle 2 - Passing an object as a prop, class component
 
-Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards since he was but a wee larvae (look it up, that's actually what newborn octopi are called!). Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOh` object down into `TentacleTwo` and filling out the information accordingly.
+Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards since he was but a wee larvae (look it up, that's actually what newborn octopi are called!). 
+
+Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOh` object down into `TentacleTwo` and filling out the information accordingly. Check the comments in the component for which value goes where!
 
 ## Tentacle 3 - Passing an object as a prop, functional component
 
@@ -39,7 +49,13 @@ Not only does Proptipus have a favorite card...he has a LEAST favorite card too!
 
 Proptipus has a lot of friends (so he says), and has been meaning to get their contact information written down...can you help him transfer his ENOURMOUS friend list from his head onto his address book?
 
-For this challenge you'll need to find the `friendList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows!
+For this challenge you'll need to find the `friendList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows! If you can't remember how to make a table...check out [this link](https://rb.gy/ovna3p) for some tips!
+
+👀 Let me just hide in here while you work on that...
+
+![Let me hide here](https://media4.giphy.com/media/iGvuyVRNK6ucSfrO5n/giphy.gif)
+
+Congratulations! That's the basic passing of props and their data! At this point on, we're getting into more intricate (but not uncommon) data flows that should take time to work out!
 
 ## Tentacles 5 and 6 - Bubbling events and re-rendering via state change
 
@@ -78,3 +94,11 @@ He is storing which movies he wants to look at in `moviesFilter` stored in state
 Thankfully Proptipus set us up a drop down selector on `TentacleSeven`, so your next steps are probaly:
 - Connect the selector to change `moviesFilter` when a different choice is selected
 - Once the `moviesFilter` has been updated, create a function(s) that will use that state to adjust the array before it's sent into `TentacleEight`
+
+## The End!
+
+You made it! You've completed a bizarre cacophony of tasks created by a [truly ridiculous person](https://www.linkedin.com/in/dane-dawson/), I applaud you for your persistence. Hopefully you were able to use this experience to help strengthen some aspect of your programming foundation, and I really hope you enjoyed it even a fraction as much as I enjoyed making it.
+
+Thank you for helping Proptipus, he appreciates everything you've done for him...but he knows the real gifts are the friends you make along the way.
+
+![Thank you](https://media4.giphy.com/media/cIWgQjnBhJHdvIxpJH/giphy.gif)
