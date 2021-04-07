@@ -87,7 +87,7 @@ class Proptipus extends React.Component {
       {
         title: "28 Manta Rays Later",
         genre: "Horror",
-        rating: "'When zombis2 attack they ray-tion their supplies'",
+        rating: "'When zombies attack they ray-tion their supplies'",
       },
       {
         title: "Beauty & The Breached Whale",
