@@ -1,6 +1,6 @@
 # Proptipus Props Practice
 
-This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidy the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather demonstrates some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props.
+This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props.
 
 To install this project run 
 ```
@@ -24,7 +24,7 @@ Proptipus is an octopus made out of React components. He consists of one `Octopu
 
 You should NEVER have to manually change the state for this project, meaning the `state` portion of `Proptipus.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
 
-There will be comments in each component describing what kind of data should be placed where, so make sure we read the direections and look at the corresponding `Tentacle` component...
+There will be comments in each component describing what kind of data should be placed where, so make sure we read the directions and look at the corresponding `Tentacle` component...
 
 
 ![And we're off](https://i.imgur.com/SpWxL2e.gif)
@@ -113,7 +113,7 @@ Thankfully Proptipus set us up a drop down selector on `TentacleSeven`, so your 
 
 That being said, like all code there is no "right" way to do things, only "working" and "not yet working" ways to do them, so feel free to experiment! 
 
-You'll know you have finished when each drop down select filters a unique list of videos, and the "Any" selector returns all the movies.
+You'll know you have finished when each drop down select filters a unique list of videos, and the "All" selector returns all the movies.
 
 ## The End!
 

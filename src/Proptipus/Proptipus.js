@@ -31,41 +31,141 @@ class Proptipus extends React.Component {
       description: "What a useless freaking fsh.",
     },
     friendsList: [
-      { name: "Poptipus", contact: "RadDad@aol.com", socialMedia: "https://twitter.com/octopusfansclub" },
-      { name: "Abikrill", contact: "SisFish@yahoo.com", socialMedia: "https://en.wikipedia.org/wiki/Krill"},
-      { name: "Axolotl Al", contact: "aLotoAx@gmail.com", socialMedia: "https://twitter.com/axobotl" },
-      { name: "Gillfunkle", contact: "SalmonAndGilfunkle@gmail.com", socialMedia: "https://twitter.com/simongarfunkel?lang=en"},
+      {
+        name: "Poptipus",
+        contact: "RadDad@aol.com",
+        socialMedia: "https://twitter.com/octopusfansclub",
+      },
+      {
+        name: "Abikrill",
+        contact: "SisFish@yahoo.com",
+        socialMedia: "https://en.wikipedia.org/wiki/Krill",
+      },
+      {
+        name: "Axolotl Al",
+        contact: "aLotoAx@gmail.com",
+        socialMedia: "https://twitter.com/axobotl",
+      },
+      {
+        name: "Gillfunkle",
+        contact: "SalmonAndGilfunkle@gmail.com",
+        socialMedia: "https://twitter.com/simongarfunkel?lang=en",
+      },
     ],
     favoriteMovies: [
-        {title: "The Gills Have Eyes", genre: "Horror", rating: "'Left me with baited breath'"},
-        {title: "Gone With the Fins", genre: "Family", rating: "'WWII - an important fishue'"},
-        {title: "Bonnie and Cod", genre: "Family", rating: "'Most affable criminals you can sea'"},
-        {title: "Finding Nemo", genre: "Family", rating: "'I love this movie'"},
-        {title: "Chumdog Millionaire", genre: "Suspense", rating: "'What an oppor-tuna-ty!'"},
-        {title: "12 Angry Fins", genre: "Suspense", rating: "`12 angry, shellfish public servants`"},
-        {title: "The Blair Fish Project", genre: "Horror", rating: "'They must salmon all their courage...'"},
-        {title: "28 Manta Rays Later", genre: "Horror", rating: "'When zombis2 attack they ray-tion their supplies'"},
-        {title: "Beauty & The Breached Whale", genre: "Family", rating: "'He just wants to cuttle'"},
+      {
+        title: "The Gills Have Eyes",
+        genre: "Horror",
+        rating: "'Left me with baited breath'",
+      },
+      {
+        title: "Gone With the Fins",
+        genre: "Family",
+        rating: "'WWII - an important fishue'",
+      },
+      {
+        title: "Bonnie and Cod",
+        genre: "Family",
+        rating: "'Most affable criminals you can sea'",
+      },
+      { title: "Finding Nemo", genre: "Family", rating: "'I love this movie'" },
+      {
+        title: "Chumdog Millionaire",
+        genre: "Suspense",
+        rating: "'What an oppor-tuna-ty!'",
+      },
+      {
+        title: "12 Angry Fins",
+        genre: "Suspense",
+        rating: "`12 angry, shellfish public servants`",
+      },
+      {
+        title: "The Blair Fish Project",
+        genre: "Horror",
+        rating: "'They must salmon all their courage...'",
+      },
+      {
+        title: "28 Manta Rays Later",
+        genre: "Horror",
+        rating: "'When zombis2 attack they ray-tion their supplies'",
+      },
+      {
+        title: "Beauty & The Breached Whale",
+        genre: "Family",
+        rating: "'He just wants to cuttle'",
+      },
     ],
     showMovies: false,
-    moviesFilter: "Any"
+    moviesFilter: "All",
   };
 
   // This is where you will be writing most of your functions!
+  increaseCount = () => {
+    this.setState({
+      ...this.state,
+      magicNumber: this.state.magicNumber + 1,
+    });
+  };
+
+  decreaseCount = () => {
+    this.setState({
+      ...this.state,
+      magicNumber: this.state.magicNumber - 1,
+    });
+  };
+
+  toggleMovies = (value) => {
+    this.setState({
+      ...this.state,
+      showMovies:
+        value === "show"
+          ? (this.state.showMovies = true)
+          : value === "hide"
+          ? (this.state.showMovies = false)
+          : !this.state.showMovies,
+    });
+  };
+
+  changeMoviesFilter = (value) => {
+    this.setState({
+      ...this.state,
+      moviesFilter: value,
+    });
+  };
 
   render() {
     return (
       <div className="proptipus">
-        <img className="logo" src={ProptipusLogo} />
-        <img className="proptipus-image" src={ProptipusBackground} />
-        <TentacleOne/>
-        <TentacleTwo/>
-        <TentacleThree/>
-        <TentacleFour/>
-        <TentacleFive/>
-        <TentacleSix/>
-        <TentacleSeven/>
-        <TentacleEight/>
+        <img className="logo" src={ProptipusLogo} alt="logo" />
+        <img
+          className="proptipus-image"
+          src={ProptipusBackground}
+          alt="background"
+        />
+        <TentacleOne punchline={this.state.punchline} />
+        <TentacleTwo fishGiOhCard={this.state.favoriteFishGiOhCard} />
+        <TentacleThree fishGiOhCard={this.state.hatedFishGiOhCard} />
+        <TentacleFour friendsList={this.state.friendsList} />
+        <TentacleFive
+          increaseCount={this.increaseCount}
+          decreaseCount={this.decreaseCount}
+        />
+        <TentacleSix magicNumber={this.state.magicNumber} />
+        <TentacleSeven
+          showMovies={this.state.showMovies}
+          toggleMovies={this.toggleMovies}
+          changeMoviesFilter={this.changeMoviesFilter}
+        />
+        <TentacleEight
+          movies={
+            this.state.moviesFilter === "All"
+              ? this.state.favoriteMovies
+              : this.state.favoriteMovies.filter(
+                  (movie) => movie.genre === this.state.moviesFilter
+                )
+          }
+          showMovies={this.state.showMovies}
+        />
       </div>
     );
   }
