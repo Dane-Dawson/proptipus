@@ -48,7 +48,7 @@ class Proptipus extends React.Component {
         {title: "Beauty & The Breached Whale", genre: "Family", rating: "'He just wants to cuttle'"},
     ],
     showMovies: false,
-    moviesFilter: "Any"
+    moviesFilter: "All"
   };
 
   addOne = () => {
@@ -66,7 +66,7 @@ class Proptipus extends React.Component {
   }
 
   sortMovies = () => {
-    if (this.state.moviesFilter === "Any" ){
+    if (this.state.moviesFilter === "All" ){
       return this.state.favoriteMovies
     }
     let filteredArray = this.state.favoriteMovies.filter(movie => movie.genre === this.state.moviesFilter)

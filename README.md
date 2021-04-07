@@ -2,6 +2,10 @@
 
 This is a lab that is design to practice use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidy the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather demonstrates some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props.
 
+When we've finished we should end with something that looks like this:
+
+<img src="./src/images/FullDemo.gif" alt="MovieListDemo" width="200px">
+
 To install this project run 
 ```
 npm install
@@ -18,7 +22,7 @@ Proptipus the cephalopod has a plethora of pretty pleasant past-times, but prior
 
 *whew*, that was a mouthful!
 
-Proptipus is an octopus made out of React components. He consists of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
+Proptipus is an octopus made out of React components. He consists of one `Proptipus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
 
 **NOTE**
 
@@ -55,7 +59,11 @@ For this challenge you'll need to find the `friendList` state and pass that arra
 
 ![Let me hide here](https://media4.giphy.com/media/iGvuyVRNK6ucSfrO5n/giphy.gif)
 
-Congratulations! That's the basic passing of props and their data! At this point on, we're getting into more intricate (but not uncommon) data flows that should take time to work out!
+When you've succeeded you should end up with a list that looks a lot like this:
+
+<img src="./src/images/AddressBookDemo.gif" alt="MovieListDemo" width="200px">
+
+Congratulations! That's the basic passing of props and their data (p.s. those links work)! At this point on, we're getting into more intricate (but not uncommon) data flows that should take time to work out!
 
 ## Tentacles 5 and 6 - Bubbling events and re-rendering via state change
 
@@ -68,11 +76,12 @@ Once the magic number is displayed we need to connect the `Magic Remote` buttons
 Remember!
 >Since the number is stored safely in his mind (the `Proptipus` component), the logic that changes that number will need to live in the same component.
 
-This means the functions to effect a state will reside directly in the component that holds the state...if only there was some way to create functions in Proptipus and pass them down to the `Magic Remote`...
+This means the functions to effect a state will reside directly in the component that holds the state...if only there was some way to create functions in Proptipus and pass them down to the `Magic Remote`.
 
-![Don't mind me](https://thumbs.gfycat.com/AccurateDisguisedGartersnake-max-1mb.gif)
+When everything is connected correctly, we should be able to see our magic number displayed lovingly on our `Prop-boy`™️ and be able to change it (both incrementing and decrementing) by pushing the buttons on the `Magic Remote`. It should look like this!
 
-When everything is connected correctly, we should be able to see our magic number displayed lovingly on our `Prop-boy`™️ and be able to change it (both incrementing and decrementing) by pushing the buttons on the `Magic Remote`
+
+<img src="./src/images/MagicRemoteDemo.gif" alt="MovieListDemo" width="200px">
 
 ## Tentacles 7 and 8 - Bubbling and conditional (sorted!?) render
 
@@ -113,7 +122,9 @@ Thankfully Proptipus set us up a drop down selector on `TentacleSeven`, so your 
 
 That being said, like all code there is no "right" way to do things, only "working" and "not yet working" ways to do them, so feel free to experiment! 
 
-You'll know you have finished when each drop down select filters a unique list of videos, and the "Any" selector returns all the movies.
+You'll know you have finished when each drop down select filters a unique list of videos, and the "All" selector returns all the movies. It should look like this:
+
+<img src="./src/images/MovieReviewDemo.gif" alt="MovieListDemo" width="400px">
 
 ## The End!
 
