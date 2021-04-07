@@ -9,7 +9,7 @@ class TentacleEight extends React.Component {
         <span className="movie-card">
           <span className="movie-title">{/* Movie title goes here */}</span>
           <br />
-          <span className="movie-rating">{/* Movie rating goes here */}</span>
+          <span className="movie-review">{/* Movie review goes here */}</span>
           <br />
 
         </span>

@@ -39,17 +39,17 @@ Proptipus is trying to write down the punch line to his favorite joke, but can't
 
 Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards since he was but a wee larvae (look it up, that's actually what newborn octopi are called!). 
 
-Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOh` object down into `TentacleTwo` and filling out the information accordingly. Check the comments in the component for which value goes where!
+Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOhCard` object down into `TentacleTwo` and filling out the information accordingly. Check the comments in the component for which value goes where!
 
 ## Tentacle 3 - Passing an object as a prop, functional component
 
-Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOh` card in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
+Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOhCard` object in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
 
 ## Tentacle 4 - Passing an array as a prop
 
 Proptipus has a lot of friends (so he says), and has been meaning to get their contact information written down...can you help him transfer his ENOURMOUS friend list from his head onto his address book?
 
-For this challenge you'll need to find the `friendList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows! If you can't remember how to make a table...check out [this link](https://rb.gy/ovna3p) for some tips!
+For this challenge you'll need to find the `friendsList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows! If you can't remember how to make a table...check out [this link](https://rb.gy/ovna3p) for some tips!
 
 👀 Let me just hide in here while you work on that...
 
@@ -82,7 +82,7 @@ However, Proptipus has been reading some tech blogs and really wants his message
 
 ### First, hide and seek with the movie list!
 
-Currently in state is a list of Proptipus' favorite movies saved as `favoriteMovies`, each including a title, genre, and his personal rating. 
+Currently in state is a list of Proptipus' favorite movies saved as `favoriteMovies`, each including a title, genre, and his personal review. 
 
 For our first step let's pass that entire array down into `TentacleEight` and iterate through it to create a post for each movie, following the structure currently built in the component. This is going to be kind of similar to what we did on `TentacleFour`! You can tell its working once you can see his (scrollable!) list of movies on the browser on his message "board".
 
