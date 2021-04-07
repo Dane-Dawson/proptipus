@@ -1,26 +1,28 @@
 import React from "react";
+import tempImg from "../../images/SadFish.jpeg"
 
 function TentacleThree(props){
 
     return (
       <div className="tentacle-three">
       <span className="fish-name">
-          {props.card.name}
+          {/* Fish name goes here */}
         </span>
 
         <img className="fish-image" 
-        src={props.card.image} />
+        src={ tempImg/* Fish image goes here */} 
+        />
 
         <span className="fish-type">
-          {props.card.type}
+          {/* Fish type goes here */}
         </span>
 
         <span className="fish-description">
-          {props.card.description}
+          {/* Fish description goes here */}
         </span>
 
         <span className="fish-attack">
-          {props.card.attack}
+          {/* Fish attack goes here */}
         </span>
       </div>
     );

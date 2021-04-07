@@ -51,45 +51,21 @@ class Proptipus extends React.Component {
     moviesFilter: "Any"
   };
 
-  addOne = () => {
-    let newMagicNum = this.state.magicNumber + 1
-    this.setState({magicNumber: newMagicNum})
-  }
-
-  subtractOne = () => {
-    let newMagicNum = this.state.magicNumber - 1
-    this.setState({magicNumber: newMagicNum})
-  }
-
-  toggleShowHide = (value) => {
-    value === "show" ? this.setState({showMovies:true}) : this.setState({showMovies:false})
-  }
-
-  sortMovies = () => {
-    if (this.state.moviesFilter === "Any" ){
-      return this.state.favoriteMovies
-    }
-    let filteredArray = this.state.favoriteMovies.filter(movie => movie.genre === this.state.moviesFilter)
-    return filteredArray
-  }
-
-  setMovieFilter = (value) => {
-    this.setState({moviesFilter: value})
-  }
+  // This is where you will be writing most of your functions!
 
   render() {
     return (
       <div className="proptipus">
         <img className="logo" src={ProptipusLogo} />
         <img className="proptipus-image" src={ProptipusBackground} />
-        <TentacleOne punchline={this.state.punchline} />
-        <TentacleTwo card={this.state.favoriteFishGiOhCard} />
-        <TentacleThree card={this.state.hatedFishGiOhCard} />
-        <TentacleFour friendsList={this.state.friendsList}/>
-        <TentacleFive addOne={this.addOne} subtractOne={this.subtractOne}/>
-        <TentacleSix magicNumber={this.state.magicNumber}/>
-        <TentacleSeven setFilter={this.setMovieFilter} toggle={this.toggleShowHide} show={this.state.showMovies}/>
-        <TentacleEight movies={this.state.showMovies ? this.sortMovies() : []}/>
+        <TentacleOne/>
+        <TentacleTwo/>
+        <TentacleThree/>
+        <TentacleFour/>
+        <TentacleFive/>
+        <TentacleSix/>
+        <TentacleSeven/>
+        <TentacleEight/>
       </div>
     );
   }

@@ -10,9 +10,9 @@ class TentacleFive extends React.Component {
       <span className="magic-remote-text">Remote</span>
       <br/>
       <button className="magic-remote-button color-1" 
-      onClick={() => this.props.subtractOne()}>-</button>
+      onClick={null /* Decrement function goes here */}>-</button>
       <button className="magic-remote-button color-2" 
-      onClick={() => this.props.addOne()}>+</button>
+      onClick={null /* Increment function goes here */}>+</button>
       <br/>
       </div>
     );

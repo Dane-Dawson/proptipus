@@ -8,22 +8,21 @@ class TentacleSeven extends React.Component {
         <input
           className="show-toggle"
           type="radio"
-          value="show"
-          checked={this.props.show}
-          onClick={()=>this.props.toggle('show')}
-        />
+          value="show" 
+          checked={ null /* What do we do with this guy?! */} 
+          onClick={ null /* You may want a function here */} /> 
         <span className="show-text">Show</span>
         <br />
         <input 
         className="hide-toggle" 
         type="radio" 
         value="hide" 
-        checked={!this.props.show} 
-        onClick={()=>this.props.toggle('hide')} /> 
+        checked={ null /* What do we do with this guy?! */} 
+        onClick={ null /* You may want a function here */} /> 
         <span className="hide-text">Hide</span>
         <br />
         <span className="genre-picker">Genre?</span>
-        <select className="genre-selector" onChange={(e)=>this.props.setFilter(e.target.value)}>
+        <select className="genre-selector" onChange={ null /* You'll probably want a function here */}>
           <option value="All">All</option>
           <option value="Horror">Horror</option>
           <option value="Suspense">Suspense</option>
