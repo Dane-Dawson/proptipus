@@ -14,8 +14,6 @@ span.tentacle-tag {
   box-shadow: rgba(3, 193, 218, 0.56) 0px 0px 100px 30px;
   border-radius: 75px;
   vertical-align: center;
-  /* How do I center this son of a bitch!?  
-    Note, doing so may require repositioning all tentacle divs...worth it? */
   width: 600px;
   margin: 0;
   position: absolute;
@@ -39,13 +37,11 @@ div.tentacle-one {
   left: 100px;
   width: 200px;
   height: 250px;
-  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
   background-image: url("../images/amazing-joke-holder.png");
   background-size: 200px;
   background-repeat: no-repeat;
-  /* background-color: blanchedalmond; */
   opacity: 0.98;
 }
 span.joke-setup {
@@ -80,7 +76,6 @@ div.tentacle-two {
 
   background-image: url("../images/FishGiOhBlueCard.png");
   background-size: 150px;
-  /* background-color: blanchedalmond; */
   opacity: 0.98;
 }
 span.fish-name {
@@ -162,7 +157,6 @@ span.friends-header {
   position: absolute;
   top: 20px;
   left: 100px;
-  /* font-family: "futura-bold"; */
 }
 @font-face {
     font-family: proptiDrew;
@@ -180,7 +174,6 @@ span.friends-header {
 
 #propti-friends td,
 #propti-friends th {
-  /* border: 1px solid #ddd; */
   padding: 1px;
 }
 
@@ -200,7 +193,6 @@ div.tentacle-five {
   left: 100px;
   width: 120px;
   height: 100px;
-  /* border: 3px solid #161616; */
   border-radius: 10px;
   background-image: url("../images/metal-texture.jpeg");
   opacity: 0.92;
@@ -247,7 +239,6 @@ span.magic-remote-text {
   background-size: 300% 100%;
 
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -255,7 +246,6 @@ span.magic-remote-text {
 
 .magic-remote-button:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -302,13 +292,11 @@ div.tentacle-six {
   left: 280px;
   width: 130px;
   height: 90px;
-  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
   background-image: url("../images/Proptipip.png");
   background-size: 130px;
   background-repeat: no-repeat;
-  /* background-color: blanchedalmond; */
   opacity: 1;
 }
 
@@ -327,12 +315,10 @@ div.tentacle-seven {
   left: 295px;
   width: 195px;
   height: 120px;
-  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
   background-image: url("../images/DriftwoodPlank.png");
   background-size: 200px;
-  /* background-color: blanchedalmond; */
   opacity: 0.98;
 }
 
@@ -382,11 +368,9 @@ div.tentacle-eight {
   left: 520px;
   width: 270px;
   height: 210px;
-  /* border: 3px solid #eaeb9e; */
   border-radius: 10px;
 
   overflow: scroll;
-  /* overflow-y: hidden; */
 
   display: flex;
   flex-wrap: wrap;

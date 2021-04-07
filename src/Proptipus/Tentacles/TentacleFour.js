@@ -20,7 +20,7 @@ class TentacleFour extends React.Component {
               <td>{/* Friend's contact goes here */}</td>
               <td>
                 <a href={null /* Friend's social media goes here */}>
-                  <img className= "bird-logo" src={Logo}/>
+                  <img alt="bird-logo" className= "bird-logo" src={Logo}/>
                 </a>
               </td>
             </tr>

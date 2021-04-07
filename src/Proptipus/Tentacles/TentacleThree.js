@@ -9,7 +9,7 @@ function TentacleThree({ fishGiOhCard }){
           {/* Fish name goes here */}
         </span>
 
-        <img className="fish-image" 
+        <img alt="fish" className="fish-image" 
         src={ tempImg/* Fish image goes here */} 
         />
 
