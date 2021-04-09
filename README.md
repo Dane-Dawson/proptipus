@@ -1,6 +1,6 @@
 # Proptipus Props Practice
 
-This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props.
+This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props. For legibility sake the state is created in a separate `ProptipusState` file and is imported in, you can look at `ProptipusState` to see all the values (which should remain unaltered throughout this lab) stored in state.
 
 To install this project run 
 ```
