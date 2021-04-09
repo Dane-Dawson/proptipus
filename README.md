@@ -1,6 +1,10 @@
 # Proptipus Props Practice
 
-This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props. For legibility sake the state is created in a separate `ProptipusState` file and is imported in, you can look at `ProptipusState.js` to see all the values (which should remain unaltered throughout this lab) stored in state.
+This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's state and props. This is NOT an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props. For legibility sake the state is created in a separate ProptipusState file and is imported in, you can look at ProptipusState.js to see all the values (which should remain unaltered throughout this lab) stored in state.
+
+When we've finished we should end with something that looks like this:
+
+<img src="./src/images/FullDemo.gif" alt="MovieListDemo" width="200px">
 
 To install this project run 
 ```
@@ -18,13 +22,13 @@ Proptipus the cephalopod has a plethora of pretty pleasant past-times, but prior
 
 *whew*, that was a mouthful!
 
-Proptipus is an octopus made out of React components. He consists of one `Proptipus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
+Proptipus is an octopus made out of React components. He consists of one `Proptipus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (imported into in our `Proptipus` component from `ProptipusState.js`) to his `Tentacle` components how they should.
 
 **NOTE**
 
-You should NEVER have to manually change the state for this project, meaning the imported from `ProptipusState.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
+You should NEVER have to manually change the state for this project, meaning the `state` portion of `Proptipus.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
 
-There will be comments in each component describing what kind of data should be placed where, so make sure we read the directions and look at the corresponding `Tentacle` component...
+There will be comments in each component describing what kind of data should be placed where, so make sure we read the direections and look at the corresponding `Tentacle` component...
 
 
 ![And we're off](https://i.imgur.com/SpWxL2e.gif)
@@ -39,23 +43,27 @@ Proptipus is trying to write down the punch line to his favorite joke, but can't
 
 Proptipus loves his eccentric hobbies, and has been collecting Fish-Gi-Oh cards since he was but a wee larvae (look it up, that's actually what newborn octopi are called!). 
 
-Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOhCard` object down into `TentacleTwo` and filling out the information accordingly. Check the comments in the component for which value goes where!
+Help him recreate his favorite Fish-Gi-Oh card from memory by passing the `favoriteFishGiOh` object down into `TentacleTwo` and filling out the information accordingly. Check the comments in the component for which value goes where!
 
 ## Tentacle 3 - Passing an object as a prop, functional component
 
-Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOhCard` object in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
+Not only does Proptipus have a favorite card...he has a LEAST favorite card too! Find his `hatedFishGiOh` card in state and pass that to `TentacleThree` to display it...heads up though, this component is a functional component, so you'll have to interact with those props a little differently!
 
 ## Tentacle 4 - Passing an array as a prop
 
 Proptipus has a lot of friends (so he says), and has been meaning to get their contact information written down...can you help him transfer his ENOURMOUS friend list from his head onto his address book?
 
-For this challenge you'll need to find the `friendsList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows! If you can't remember how to make a table...check out [this link](https://rb.gy/ovna3p) for some tips!
+For this challenge you'll need to find the `friendList` state and pass that array into `TentacleFour`. Once you have access the whole whole array in `TentacleFour` you can iterate through it to create our table rows! If you can't remember how to make a table...check out [this link](https://rb.gy/ovna3p) for some tips!
 
 👀 Let me just hide in here while you work on that...
 
 ![Let me hide here](https://media4.giphy.com/media/iGvuyVRNK6ucSfrO5n/giphy.gif)
 
-Congratulations! That's the basic passing of props and their data! At this point on, we're getting into more intricate (but not uncommon) data flows that should take time to work out!
+When you've succeeded you should end up with a list that looks a lot like this:
+
+<img src="./src/images/AddressBookDemo.gif" alt="MovieListDemo" width="200px">
+
+Congratulations! That's the basic passing of props and their data (p.s. those links work)! At this point on, we're getting into more intricate (but not uncommon) data flows that should take time to work out!
 
 ## Tentacles 5 and 6 - Bubbling events and re-rendering via state change
 
@@ -68,11 +76,12 @@ Once the magic number is displayed we need to connect the `Magic Remote` buttons
 Remember!
 >Since the number is stored safely in his mind (the `Proptipus` component), the logic that changes that number will need to live in the same component.
 
-This means the functions to effect a state will reside directly in the component that holds the state...if only there was some way to create functions in Proptipus and pass them down to the `Magic Remote`...
+This means the functions to effect a state will reside directly in the component that holds the state...if only there was some way to create functions in Proptipus and pass them down to the `Magic Remote`.
 
-![Don't mind me](https://thumbs.gfycat.com/AccurateDisguisedGartersnake-max-1mb.gif)
+When everything is connected correctly, we should be able to see our magic number displayed lovingly on our `Prop-boy`™️ and be able to change it (both incrementing and decrementing) by pushing the buttons on the `Magic Remote`. It should look like this!
 
-When everything is connected correctly, we should be able to see our magic number displayed lovingly on our `Prop-boy`™️ and be able to change it (both incrementing and decrementing) by pushing the buttons on the `Magic Remote`
+
+<img src="./src/images/MagicRemoteDemo.gif" alt="MovieListDemo" width="200px">
 
 ## Tentacles 7 and 8 - Bubbling and conditional (sorted!?) render
 
@@ -82,7 +91,7 @@ However, Proptipus has been reading some tech blogs and really wants his message
 
 ### First, hide and seek with the movie list!
 
-Currently in state is a list of Proptipus' favorite movies saved as `favoriteMovies`, each including a title, genre, and his personal review. 
+Currently in state is a list of Proptipus' favorite movies saved as `favoriteMovies`, each including a title, genre, and his personal rating. 
 
 For our first step let's pass that entire array down into `TentacleEight` and iterate through it to create a post for each movie, following the structure currently built in the component. This is going to be kind of similar to what we did on `TentacleFour`! You can tell its working once you can see his (scrollable!) list of movies on the browser on his message "board".
 
@@ -113,7 +122,9 @@ Thankfully Proptipus set us up a drop down selector on `TentacleSeven`, so your 
 
 That being said, like all code there is no "right" way to do things, only "working" and "not yet working" ways to do them, so feel free to experiment! 
 
-You'll know you have finished when each drop down select filters a unique list of videos, and the "All" selector returns all the movies.
+You'll know you have finished when each drop down select filters a unique list of videos, and the "All" selector returns all the movies. It should look like this:
+
+<img src="./src/images/MovieReviewDemo.gif" alt="MovieListDemo" width="400px">
 
 ## The End!
 
