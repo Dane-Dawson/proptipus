@@ -1,6 +1,6 @@
 # Proptipus Props Practice
 
-This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props. For legibility sake the state is created in a separate `ProptipusState` file and is imported in, you can look at `ProptipusState` to see all the values (which should remain unaltered throughout this lab) stored in state.
+This is a lab that is designed to practice the use of props in React in a myriad of applications. It is intended as a supplimental fun exercise to reinforce and solidify the concepts useful to work within the React framework, specifically it's `state` and `props`. This is *NOT* an introduction to props, but rather a demonstration of some common ways props are used within React for you to explore and experiment with. Tentacles 1-4 are focused on more foundational/fundamental prop manipulation, and tentacles 5-8 start to explore some more nuanced uses of React's props. For legibility sake the state is created in a separate `ProptipusState` file and is imported in, you can look at `ProptipusState.js` to see all the values (which should remain unaltered throughout this lab) stored in state.
 
 To install this project run 
 ```
@@ -18,11 +18,11 @@ Proptipus the cephalopod has a plethora of pretty pleasant past-times, but prior
 
 *whew*, that was a mouthful!
 
-Proptipus is an octopus made out of React components. He consists of one `Octopus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
+Proptipus is an octopus made out of React components. He consists of one `Proptipus` component that contains within it 8 unique `Tentacle` components. Unfortunately our poor pal Proptipus had a really rough night and can't quite get his tentacles to respond how he wants them to! Let's help connect his thoughts (stored in `state` in our `Proptipus` component) to his `Tentacle` components how they should.
 
 **NOTE**
 
-You should NEVER have to manually change the state for this project, meaning the `state` portion of `Proptipus.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
+You should NEVER have to manually change the state for this project, meaning the imported from `ProptipusState.js` should stay untouched throughout this whole practice! Proptipus knows everything already, you should only be adding functions and passing props around, then digging into those props to render on the page!
 
 There will be comments in each component describing what kind of data should be placed where, so make sure we read the directions and look at the corresponding `Tentacle` component...
 
