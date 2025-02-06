@@ -4,7 +4,7 @@ export default {
   magicNumber: 42,
   favoriteFishGiOhCard: {
     name: "Red Eye Tetra",
-    image: "https://aquadiction.world/img/profile/red-eye-tetra1.jpg",
+    image: "https://cdn11.bigcommerce.com/s-nzocnvfw4r/products/270/images/533/%2525D0%252591%2525D0%2525B5%2525D0%2525B7-%2525D0%2525B8%2525D0%2525BC%2525D0%2525B5%2525D0%2525BD%2525D0%2525B8-1-17__42819.1731440274.386.513.jpg?c=1",
     type: "[DIVINE-BEAST]",
     attack: 9001,
     description:
@@ -12,7 +12,7 @@ export default {
   },
   hatedFishGiOhCard: {
     name: "No Eye Fsh",
-    image: "https://scx2.b-cdn.net/gfx/news/2017/howdoblindca.jpg",
+    image: "https://www.bristolaquarium.co.uk/wp-content/uploads/2023/10/iStock-615280100-1024x683.jpg",
     type: "[DIVINE-BEAST]",
     attack: "How?",
     description: "What a useless freaking fsh.",
